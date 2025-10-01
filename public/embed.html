@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Widget Embed - Instructions</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .warning {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 12px;
+      margin: 20px 0;
+    }
+    .info {
+      background: #d1ecf1;
+      border-left: 4px solid #0dcaf0;
+      padding: 12px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🤖 Chatbot Widget - Embedding Instructions</h1>
+  
+  <h2>Option 1: iFrame Embed (Recommended for GitHub Pages)</h2>
+  
+  <p>Add this code to your website (e.g., https://minh111104.github.io/):</p>
+  
+  <pre><code>&lt;!-- Add before closing &lt;/body&gt; tag --&gt;
+&lt;iframe 
+  id="chatbot-widget"
+  src="https://your-chatbot-domain.vercel.app" 
+  style="position: fixed; bottom: 0; right: 0; width: 420px; height: 650px; border: none; z-index: 9999; pointer-events: none;"
+  allow="clipboard-write"
+&gt;&lt;/iframe&gt;
+
+&lt;script&gt;
+  // Enable pointer events only on the widget area
+  const iframe = document.getElementById('chatbot-widget');
+  iframe.style.pointerEvents = 'auto';
+&lt;/script&gt;</code></pre>
+
+  <div class="warning">
+    <strong>⚠️ Important:</strong> Replace <code>your-chatbot-domain.vercel.app</code> with your actual deployed chatbot URL.
+  </div>
+
+  <h2>Option 2: Standalone Widget (More Control)</h2>
+  
+  <p>If you want the widget button to blend with your main site:</p>
+  
+  <pre><code>&lt;!-- Add to your &lt;head&gt; --&gt;
+&lt;link rel="stylesheet" href="https://your-chatbot-domain.vercel.app/widget.css"&gt;
+
+&lt;!-- Add before closing &lt;/body&gt; tag --&gt;
+&lt;div id="chatbot-root"&gt;&lt;/div&gt;
+&lt;script src="https://your-chatbot-domain.vercel.app/widget.js"&gt;&lt;/script&gt;</code></pre>
+
+  <h2>Option 3: Direct Component Integration</h2>
+  
+  <p>If your main website also uses React/Next.js:</p>
+  
+  <pre><code>import ChatWidget from '@/components/ChatWidget'
+
+function YourPage() {
+  return (
+    &lt;div&gt;
+      {/* Your page content */}
+      &lt;ChatWidget /&gt;
+    &lt;/div&gt;
+  )
+}</code></pre>
+
+  <h2>📋 Deployment Steps</h2>
+  
+  <ol>
+    <li><strong>Deploy to Vercel:</strong>
+      <ul>
+        <li>Push this repository to GitHub</li>
+        <li>Go to <a href="https://vercel.com">vercel.com</a> and import your repository</li>
+        <li>Add your <code>OPENAI_API_KEY</code> in environment variables</li>
+        <li>Deploy!</li>
+      </ul>
+    </li>
+    <li><strong>Get Your Deployment URL:</strong>
+      <ul>
+        <li>After deployment, you'll get a URL like <code>chatbot-widget-xyz.vercel.app</code></li>
+      </ul>
+    </li>
+    <li><strong>Add to Your GitHub Pages Site:</strong>
+      <ul>
+        <li>Go to your main website repository (minh111104.github.io)</li>
+        <li>Edit your <code>index.html</code> file</li>
+        <li>Add the iframe embed code before <code>&lt;/body&gt;</code></li>
+        <li>Commit and push - the chatbot will appear on your site!</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>🎨 Customization</h2>
+  
+  <p>To customize the chatbot for your website:</p>
+  
+  <ol>
+    <li><strong>Update the AI prompt:</strong> Edit <code>app/api/chat/route.ts</code> to include information about yourself</li>
+    <li><strong>Change colors:</strong> Edit <code>components/ChatWidget.tsx</code> - modify Tailwind classes</li>
+    <li><strong>Adjust position:</strong> Modify the iframe styles or widget component styles</li>
+  </ol>
+
+  <div class="info">
+    <strong>💡 Pro Tip:</strong> The chatbot maintains conversation context, so users can have natural conversations spanning multiple messages!
+  </div>
+
+  <h2>🔐 Security Notes</h2>
+  
+  <ul>
+    <li>Never commit your <code>.env.local</code> file with actual API keys</li>
+    <li>Add environment variables directly in Vercel dashboard</li>
+    <li>The OpenAI API key is only used server-side and never exposed to clients</li>
+  </ul>
+
+</body>
+</html>

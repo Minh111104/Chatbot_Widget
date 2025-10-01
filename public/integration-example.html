@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integration Example - Your GitHub Pages Site</title>
+  <style>
+    /* Your existing styles */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #333;
+      margin-top: 0;
+    }
+    .note {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 4px solid #2196F3;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of how your main GitHub Pages site (https://minh111104.github.io/) would look with the chatbot widget integrated.</p>
+    
+    <div class="note">
+      <strong>👋 Try the chatbot!</strong> Click the blue chat icon in the bottom right corner to ask questions about me.
+    </div>
+    
+    <h2>About Me</h2>
+    <p>Your existing content goes here...</p>
+    
+    <h2>My Projects</h2>
+    <p>Your projects section...</p>
+    
+    <h2>Contact</h2>
+    <p>Your contact information...</p>
+  </div>
+
+  <!-- 
+    ============================================
+    CHATBOT WIDGET INTEGRATION
+    ============================================
+    
+    Copy the code below and paste it into your actual 
+    GitHub Pages site (minh111104.github.io) index.html
+    
+    Just add it before the closing </body> tag!
+  -->
+  
+  <!-- Chatbot Widget iFrame -->
+  <iframe 
+    id="chatbot-widget"
+    src="https://YOUR-DEPLOYMENT-URL.vercel.app" 
+    style="
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 420px;
+      height: 650px;
+      border: none;
+      z-index: 9999;
+    "
+    allow="clipboard-write"
+    title="AI Chatbot Assistant"
+  ></iframe>
+
+  <!-- 
+    IMPORTANT: Replace "YOUR-DEPLOYMENT-URL.vercel.app" above 
+    with your actual Vercel deployment URL after you deploy!
+    
+    Example: https://chatbot-widget-abc123.vercel.app
+  -->
+
+  <script>
+    // Optional: Add smooth entrance animation
+    window.addEventListener('load', function() {
+      const iframe = document.getElementById('chatbot-widget');
+      iframe.style.opacity = '0';
+      iframe.style.transition = 'opacity 0.3s ease-in';
+      
+      setTimeout(function() {
+        iframe.style.opacity = '1';
+      }, 500);
+    });
+  </script>
+
+</body>
+</html>

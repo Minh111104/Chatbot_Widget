@@ -1,4 +1,4 @@
-# Chatbot Widget
+# Chatbot Widget 🤖
 
 A modern, AI-powered chatbot widget built with Next.js, OpenAI, and Tailwind CSS. This chatbot can be embedded on any website to provide interactive assistance to visitors.
 

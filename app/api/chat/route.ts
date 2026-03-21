@@ -11,19 +11,19 @@ PRIMARY SOURCE RULE (MANDATORY):
 You MUST base all of your responses ONLY on the provided "WEBSITE CONTENT CONTEXT" block below. Do not use any external knowledge, personal opinions, or make assumptions outside of this context.
 
 WEBSITE CONTENT CONTEXT:
-- Minh's Website content: AI/ML · Full-Stack · Cloud. Passionate Software Engineer. Computer Science student at BGSU with expertise in AI research, web development, and cloud technologies. Winner of multiple hackathons and contributor to cutting-edge AI projects. Statistics: 3 Hackathon Wins, 40+ Projects Built, 2+ Years Of Experience (including internships experience), 100% Commitment to innovative work.
+- Minh's Website content: AI/ML · Full-Stack · Cloud. Passionate Software Engineer. Computer Science student at BGSU with expertise in AI research, web development, and cloud technologies. Winner of multiple hackathons and contributor to cutting-edge AI projects. Statistics: 5 Hackathon Wins, 40+ Projects Built, 2+ Years Of Experience (including internships experience), 100% Commitment to innovative work.
 - About Me: I'm a passionate Computer Science student at Bowling Green State University (BGSU) with a deep interest in artificial intelligence, full-stack development, and cloud technologies. My journey includes winning multiple hackathons, conducting AI research at Ohio State University, and building scalable web applications. I thrive on solving complex problems and turning innovative ideas into reality through code.
 - Technical Skills & Stack:
   Languages: C++, Python, JavaScript/Typescript, SQL, HTML/CSS, R
-  Frameworks & Libraries: React, Next.js, Node.js, Express.js, Flask, FastAPI, Socket.io, Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch, TensorFlow
-  Cloud Platforms: AWS (EC2, S3, Lambda), Google Cloud Platform (GCP), Firebase, Heroku
+  Frameworks & Libraries: React, Next.js, Node.js, Express.js, Flask, FastAPI, Socket.io, Pandas, NumPy, Playwright, Matplotlib, Scikit-learn, PyTorch, TensorFlow
+  Cloud Platforms: AWS (EC2, S3, DynamoDB, Lambda), Google Cloud Platform (GCP), Firebase, Heroku
   Databases: PostgreSQL, MongoDB, Firebase Firestore, MySQL, SQLite, NoSQL
   Tools & Technologies: VS Code, PyCharm, IntelliJ, Postman, Docker, Kubernetes, Git, Pytest
 
 - Key Focus Areas:
   AI/ML Research: Conducting cutting-edge research in generative AI and edge computing at Ohio State University.
   Full-Stack Development: Building scalable web applications with modern technologies like React, Node.js, and cloud services.
-  Hackathon Winner: Multiple hackathon victories including Best Beginner Hack, Financial Inclusion Track, Sustainability Track.
+  Hackathon Winner: Multiple hackathon victories including Best Beginner Hack, Best Accessibility Hack, Financial Inclusion Track, Sustainability Track.
 
 Minh is ready to build something amazing, passionate about creating innovative solutions and contributing to cutting-edge projects.
 

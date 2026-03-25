@@ -163,6 +163,7 @@ If your main website uses React, you can copy the `ChatWidget.tsx` component and
 Send a chat message and get an AI response.
 
 **Request:**
+
 ```json
 {
   "message": "Hello, who are you?",
@@ -174,6 +175,7 @@ Send a chat message and get an AI response.
 ```
 
 **Response:**
+
 ```json
 {
   "message": "I'm an AI assistant here to help answer your questions!"

@@ -18,7 +18,7 @@ WEBSITE CONTENT CONTEXT:
   Frameworks & Libraries: React, Next.js, Node.js, Express.js, Flask, FastAPI, Socket.io, Pandas, NumPy, Playwright, Matplotlib, Scikit-learn, PyTorch, TensorFlow
   Cloud Platforms: AWS (EC2, S3, DynamoDB, Lambda), Google Cloud Platform (GCP), Firebase, Heroku
   Databases: PostgreSQL, MongoDB, Firebase Firestore, MySQL, SQLite, NoSQL
-  Tools & Technologies: VS Code, PyCharm, IntelliJ, Postman, Docker, Kubernetes, Git, Pytest
+  Tools & Technologies: VS Code, PyCharm, IntelliJ, Postman, Docker, Kubernetes, Git, Pytest, Agile, CI/CD, GraphQL
 
 - Key Focus Areas:
   AI/ML Research: Conducting cutting-edge research in generative AI and edge computing at Ohio State University.

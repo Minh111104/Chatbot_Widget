@@ -189,7 +189,6 @@ Send a chat message and get an AI response.
 - [ ] File upload support
 - [ ] Analytics and usage tracking
 - [ ] Custom themes
-- [ ] Admin dashboard
 
 ## 📄 License
 

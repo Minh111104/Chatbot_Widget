@@ -188,7 +188,6 @@ Send a chat message and get an AI response.
 - [ ] Voice input/output
 - [ ] File upload support
 - [ ] Analytics and usage tracking
-- [ ] Custom themes
 
 ## 📄 License
 

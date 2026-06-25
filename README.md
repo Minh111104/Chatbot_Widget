@@ -185,7 +185,6 @@ Send a chat message and get an AI response.
 ## 🚧 Future Enhancements
 
 - [ ] Supabase integration for persistent chat history
-- [ ] Voice input/output
 - [ ] File upload support
 - [ ] Analytics and usage tracking
 
